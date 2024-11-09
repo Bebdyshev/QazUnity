@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(233, 232, 232);
+    font-family: "Montserrat", sans-serif;
+}
+
+.user_img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px 95px;
+  }
+
+i {
+    background-color: transparent;
+}
+
+.buttonAI svg {
+    background-color: transparent;
+    fill: white;
+}
+
+#info {
+    display: flex;
+    float: left;
+    height: 100vh;
+    width: 20%;
+    background-color: white;
+    margin: auto;
+    justify-content: center;
+}
+
+#info_ac {
+    margin: 20px auto;
+    background-color: white;
+}
+
+p, h4 {
+    background-color: transparent;
+    margin: auto;
+}
+
+#main {
+    display: flex;
+    background-color: transparent;
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+}
+
+input, textarea {
+    border: 2px solid lightgray;
+    background-color: white;
+}
+
+#main_inf {
+    margin: 25px auto;
+    width: 80%;
+    height: 90vh;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.075);
+    background-color: white;
+
+}
+
+
+form {
+    background-color: transparent;
+    margin: 0px 20px;
+}
+
+.min_inf {
+    background-color: white;
+    margin: 5px auto;
+    font-size: 0.9em;
+    color: rgb(102, 102, 102);
+}
+
+#line {
+    margin: 10px auto;
+    height: 2px;
+    width: 200px;
+    border-top: 2px solid rgba(128, 128, 128, 0.541);
+}
+
+h4 {
+    margin: 10px 10px;
+}
+
+.min_inf2 {
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+    margin: 5px 10px;
+}
+
+/* rich text editor */
+
+#text {
+    outline: none;
+    width: 100%;
+    border: 1px solid #ddd;
+    height: 40px;
+    background-color: rgba(187, 186, 186, 0.555);
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+
+.options{
+    margin: -20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    gap: 15px;
+}
+
+button{
+    width: 28px;
+    height: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    color: #020929;
+    cursor: pointer;
+}
+
+.options label,
+.options select{
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="color"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 40px;
+    height: 28px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch{
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #020929;
+}
+
+input[type="color"]::-moz-color-swatch{
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #020929;
+}
+
+#text-input{
+    border: 1px solid whitesmoke;
+    padding: 20px;
+    height: 280px;
+    border-radius: 0px 0px 5px 5px;
+    background-color: whitesmoke;
+}
+
+.active{
+    background-color: #e0e9ff;
+}
+
+#submit {
+    float: right;
+    color: #7011ce;
+    margin: 5px;
+    padding: 10px 10px;
+    width: 10%;
+    background-color: white;
+    transition: 0.2s ease;
+    line-height: 5%; /* Выравниваем текст по вертикали */
+    border: 2px solid #7011ce;
+}
+
+
+#submit:hover {
+    color: white;
+    background-color: #7011ce;
+}
+
+ul {
+    background-color: white;
+}
+
+li {
+    list-style: square;
+    background-color: white;
+}
+
+#buttons {
+    background-color: red;
+    position: relative;
+    display: flex;
+    justify-items: center;
+    background-color: transparent;
+}
+
+.buttonAI {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 40px;
+    color: rgb(121, 121, 121);
+    border-radius: 0%;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.616);
+    background-color: white;
+}
+
+.buttonAI:last-child {
+    border-radius: 0px 8px 8px 0px;
+    border-left: none;
+    width: 5%;
+    background-color: #7011ce;
+    border: none;
+}
+
+.fa-paper-plane {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.buttonAI:first-child {
+    padding: 5px 10px;
+    border-radius: 8px 0px 0px 8px;
+    width: 95%;
+    resize: none;
+}
+
+#popAI {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.473);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#popPro {
+    display: flex;
+    background-color:#7011ce;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+#mytextarea {
+    width: 100%; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+}
+
+#popupAI {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    overflow:hidden;
+    top:0px;
+    background-color: rgba(0, 0, 0, 0.808);
+    z-index: 1000;
+}
+
+.popupText {
+    left: 25%;
+    top: 10%;
+    width: 50%;
+    height: 80%;
+    border-radius: 12px;
+    position:fixed;
+    overflow:hidden;
+    background-color: white;
+}
+
+#loader {
+    position: fixed;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+}
+
+#loadGif {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 30%;
+}
+
+.henText {
+    width: 95%;
+    height: 80%;
+    resize: none;
+    margin: 80px 15px;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+}
+
+#copyBtn {
+    position: absolute;
+    right: 4%;
+    top: 16.5%;
+    font-size: 15px;
+    background-color: transparent;
+    color: gray;
+}
+
+#labelAi {
+    position: absolute;
+    margin: 25px 20px;
+    font-size: 17px;
+    background-color: transparent;
+}
+
+#popupBtn {
+    position: absolute;
+    right: 1%;
+    padding: 10px;
+    background-color: white;
+}
+
+.fa-xmark {
+    font-size: 15px;
+}
+
+.invest {
+    float: left;
+    color: #7011ce;
+    margin: 5px;
+    padding: 10px 10px;
+    width: 30%;
+    text-decoration: none;
+    background-color: white;
+    transition: 0.2s ease;
+    line-height: 5%; 
+    margin-left: 20px;
+    border: 2px solid #7011ce;
+}

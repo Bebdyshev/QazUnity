@@ -1,0 +1,169 @@
+div {
+    background-color: transparent;
+}
+
+ol, ul, li, strong {
+    background-color: transparent;
+}
+
+#programms, #connect, #connect i {
+    color: #7e12e9;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#hor_line {
+    position: absolute;
+    width: 110px;
+    height: 2px;
+    margin-top: 4px;
+    margin-left: 198px;
+    border-bottom: 4px solid #7e12e9;
+    z-index: -1;
+}
+
+i {
+    background-color: transparent;
+}
+
+#search {
+    width: 85%;
+    height: 45px;
+    border-radius: 50px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.096);
+}
+
+.fa-magnifying-glass {
+    font-size: 20px;
+    margin: 10px;
+    color: rgb(85, 85, 85);
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    background-color: transparent;
+    height: 45px;
+}
+
+#search-bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    height: 100%;
+    border: 2px solid white;
+    transition: 0.2s ease-in-out;
+}
+
+#search-bar:hover {
+    border: 2px solid #7011ced3;
+}
+
+#search-bar-input {
+    color: rgb(85, 85, 85);
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: none;
+}
+
+#create {
+    background-color: #7011ced3;
+    border-radius: 50px;
+    width: 12%;
+    border-radius: 50px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+#create-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: transparent;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: -2px;
+}
+
+#create:hover {
+    background-color: #5a0ea7d3;
+}
+
+#create-btn span {
+    margin-top: 4px;
+}
+
+#create-btn i {
+    font-size: 40px;
+}
+
+#page {
+    margin-top: 25px;
+}
+
+.article {
+    margin-top: 25px;
+    background-color: white;
+}
+
+/* Стили для информации о статье */
+.article-info {
+    margin-bottom: 10px;
+    margin-left: 17%;
+    font-weight: bold;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.articleSubject {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.articleSubject i {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.atricleDate {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+/* Стили для текста статьи */
+.article-text {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    clear: both; /* Очистка float'ов */
+    margin-top: 10px; /* Отступ сверху */
+}
+
+.articleText {
+    font-size: 30px;
+    line-height: 1.5; /* Межстрочный интервал для удобного чтения текста */
+}

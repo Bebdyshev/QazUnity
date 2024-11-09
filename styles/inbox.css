@@ -1,0 +1,132 @@
+i {
+    background-color: transparent;
+}
+
+div {
+    background-color: transparent;
+}
+
+h2 {
+    padding: 20px;
+}
+
+#hor_line {
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    margin-top: 4px;
+    margin-left: 550px;
+    border-bottom: 4px solid #7e12e9;
+    z-index: 1;
+}
+
+.content {
+    color: #2e333b;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.h1 {
+    font-size: 30px;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Разрешает перенос элементов на новую строку */
+    gap: 15px; /* Расстояние между пользователями */
+    padding: 10px; /* Отступы для секции с пользователями */
+}
+
+/* inbox main */
+
+.db_mesbox {
+    justify-self: center;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.075);
+    border-radius: 10px;
+    padding-bottom: 40px;
+}
+
+.db_p {
+    margin: 20px auto;
+    width: 96%;
+    text-align: left;
+    background-color: transparent;
+}
+
+.fa-x {
+    position: absolute;
+    cursor: pointer;
+    font-size: 17px;
+    left: -25px;
+    font-weight: 700;
+    color: rgba(255, 37, 37, 0.705);
+    margin-top: 5px;
+}
+
+.db_mes {
+    margin: 20px auto;
+    width: 96%;
+    background-color: rgba(211, 211, 211, 0.253);
+    border-radius: 8px;
+    padding-bottom: 100px;
+}
+
+.db_but {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    color: #7011ce;
+    float: right;
+}
+
+.m {
+    font-style: italic;
+}
+
+h3 {
+    padding: 10px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.par {
+    margin: 10px;
+}
+
+.db_poll {
+    background-color: transparent;
+}
+
+#nig {
+    position: absolute;
+    cursor: pointer;
+    font-size: 17px;
+    right: 10%;
+    font-weight: 700;
+    color: rgba(255, 37, 37, 0.705);
+    margin-top: 5px;
+    border: none;
+}
+
+.time {
+    color: rgba(75, 75, 75, 0.664);
+    background-color: transparent;
+}
+
+.m {
+    margin: 1% 2%;
+}
+
+#inbox {
+    color: #7011ce;
+}
+
+strong, i, u {
+    background-color: transparent;
+}

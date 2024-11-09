@@ -1,0 +1,31 @@
+<?php
+    $lang = array(
+        "home" => "Home",
+        "career" => "Career",
+        "community" => "Community",
+        "groups" => "Groups",
+        "programs" => "Program",
+        "connect" => "Connect",
+        "inbox" => "Inbox",
+        "contacts" => "Contacts",
+        "welcome-1" => "Hello, ",
+        "welcome-2" => "! Welcome to Our Website.",
+        "update-p" => "Update your profile",
+        "update-span" => "Get the most out of Qazunity by building your profile",
+        "help" => "Help topics",
+        "help-description" => "Select anything for which you’d like some guidance or direction.",
+        "help-select" => "Select help topics",
+        "help-anxiety" => "Job Search Strategies",
+        "help-bulling" => "Resume Writings",
+        "help-depression" => "Interview",
+        "help-suicide" => "Career Growth",
+        "content" => "Tell us more about yourself",
+        "content-description" => "Let us get to know you a bit better to make it as easy as possible to connect with like-minded people in your community.",
+        "content-exp" => "Add your career aspirations or experience",
+        "content-exp-placeholder" => "Eg. Arts history student, Research intern @ Twitter, etc",
+        "content-place" => "I’m currently living in ",
+        "content-place-placeholder" => "E.g., New York, San Francisco, Chicago...",
+        "submit" => "Submit",
+        "lang" => "Language"
+    );
+?>

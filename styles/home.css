@@ -1,0 +1,311 @@
+button {
+    padding: 12px 25px;
+    background-color: #7e12e9;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+button:hover {
+    background-color: #7011ce;
+}
+
+#home {
+    color: #7e12e9;
+}
+
+
+/* Home page */
+
+.content {
+    color: #2e333b;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.h1 {
+    font-size: 30px;
+}
+
+#greet, #update_profile {
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px; /* Добавьте высоту, которая нужна для блока .greet */
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+#greet {
+    margin-top: 100px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.075);
+}
+
+#update_profile {
+    border: 2px solid #d9d9d9;
+    width: 48%;
+    align-self: flex-start;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.1s ease;
+    display: flex;
+    flex-direction: column; /* Это добавленное свойство поможет расположить элементы в колонку */
+    align-items: center;
+    justify-content: center;
+}
+
+
+span {
+    color: #75787e;
+    background-color: transparent;
+}
+
+#update_profile:hover {
+    border: 2px solid #69bcfe;
+}
+
+.profile-info {
+    display: flex;
+    align-items: flex-start; /* Выравнивание элементов по верхнему краю */
+    background-color: transparent;
+}
+
+.profile-info i {
+    background-color: transparent;
+    font-size: 35px;
+    margin-right: 15px;
+    align-self: flex-start; /* Выравнивание иконки по верхнему краю блока */
+}
+
+.profile-info div {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+/* form */
+
+#form_container {
+    display: flex;
+    background-color:white;
+    height: 400px;
+    border-radius: 15px;
+    border: 2px solid #d9d9d9;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+  .inf_form,
+  .sel_form {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 50%;
+  }
+  
+  .inf_form {
+    background-color: transparent;
+    float: left;
+    padding-left: 2%;
+  }
+  
+  .sel_form {
+    background-color: transparent;
+    float: right;
+  }
+  
+  .inf_p {
+    padding-bottom: 30px;
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .inf_span {
+    padding-left: 5%;
+    background-color:transparent;
+}
+
+.inf_span li {
+color: #696f7a;
+}
+
+#countries {
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.075);
+}
+
+/* next/back buttons*/
+
+#prevAct,
+#nextAct {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+#prevAct {
+  left: -25px;
+}
+
+#nextAct {
+  right: -25px;
+}
+
+#next,
+#back {
+  font-size: 25px;
+  background-color: transparent;
+}
+
+#next {
+    margin-left: -10px;
+}
+
+#back {
+    margin-left: -10px;
+}
+
+.item {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+/* 2 stage */
+
+.ii {
+    font-size: 17px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent;
+}
+
+.ii:last-child {
+    padding-top: 50px;
+}
+
+.text {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#text1 {
+    height: 90px;    
+    resize: none;
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+}
+
+#text1, .text {
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    background-color: white;
+    transition: 0.1s ease;
+}
+
+.text {
+    width: 100%;
+    height: 40px;
+}
+
+/* For input elements */
+input::placeholder, textarea::placeholder {
+    margin-left: 10px;
+    color: #696f7a; /* Placeholder text color */
+     /* Placeholder text style */
+  }
+
+.text:hover, #text1:hover {
+    border: 1px solid #48acfc;
+}
+
+#sub {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.fa-caret-down {
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.fa-user {
+    color: black;
+}
+
+.user_i {
+    color: black;
+}
+
+li {
+    background-color: white;
+}
+
+.br {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    #update_profile {
+        width: 100%;
+    }
+
+    #form_container {
+        display: flex;
+        background-color: white;
+        height: 50%;
+        border-radius: 15px;
+        border: 2px solid #d9d9d9;
+        padding: 20px;
+        box-sizing: border-box;
+        flex-direction: column;
+        position: relative;
+        align-items: stretch;
+    }    
+
+    .inf_form,
+    .sel_form {
+        flex: 1;
+        padding: 20px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #update_inf {
+        font-size: 20px;
+    }
+
+    .user_i {
+        margin: 10px;
+    }
+
+    #update_span {
+        font-size: 15px;
+    }
+
+    .br {
+        display: block;
+    }
+}

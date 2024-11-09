@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(233, 232, 232);
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;   
+}
+
+div {
+    background-color: transparent;
+}
+
+span, h1, h2, h3, h4, h5, h6, p {
+
+    background-color: transparent;
+}
+
+nav li, nav a, nav button {
+    font-weight: 500;
+    font-size:  18px;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.075);
+    z-index: 998;
+}
+
+#user_pfp {
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.logo {
+    cursor: pointer;
+    background-color: white;
+}
+
+#line {
+    height: 40px;
+    width: 2px;
+    border-right: 2px solid lightgray;
+    background-color: white;
+}
+
+
+.nav_links {
+    list-style: none;
+    background-color: white;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+    background-color: white;
+}
+
+.nav_links li .a {
+    display: block;
+    padding: 15px 30px;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.dropdown {
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0;
+    background: white;
+    display: none;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.dropdown li {
+    list-style: none;
+    height: auto;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dropdown li:hover {
+    background-color: #ececec;
+}
+
+.dropdown li a {
+    width: 100%;
+    background-color: transparent;
+}
+
+nav ul.nav_links {
+    position: relative;
+}
+
+nav ul.nav_links > li {
+    position: relative; 
+}
+
+nav ul.nav_links li:hover .dropdown {
+    display: block;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+}
+
+.nav_links li .a:hover {
+    background-color: #ececec;
+}
+
+.nav_links li a .fa-caret-down {
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.nav_links li a:hover .fa-caret-down {
+    transform: rotate(180deg); 
+    background-color: #ececec;
+}
+
+
+#main_home {
+    padding-top: 5%;
+    width: 80%;
+    height: 100%;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+.nav_i {
+    background-color: white;
+    color: black;
+}
+
+.message-counter {
+    background-color: #7e12e9b4;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 50%;
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+#loader {
+    position: fixed;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    z-index: 1005;
+    margin-top: -50px;
+}
+
+#loadGif {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 30%;
+}
+
+#hr {
+    height: 1px;
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 50px;
+    background-color: rgb(177, 177, 177);
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    position: relative;
+    border: 1px solid #080808;
+    background-color: #222;
+    background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
+    background-repeat: repeat-x;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    float: left;
+    padding: 14px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+.navbar-links {
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+    margin: 0;
+}
+
+    .navbar-links li {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .navbar-links li {
+        display: inline-block;
+        min-width: 120px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+        .navbar-links li.active {
+            background-image: #080808;
+            background: #080808;
+            color: #fff;
+            height: 100%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin: 0;
+        }
+
+a {
+    color: #9d9d9d;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media (max-width: 640px) {
+    .navbar-brand {
+        width: 100%;
+    }
+
+    .navbar-links {
+        padding-left: 0;
+    }
+
+    button.demo {
+        margin-right: 100% !important;
+    }
+}
+
+#container {
+    padding-top: 30px;
+    width: 30%;
+    height: 90px;
+    font-size: 14px;
+    /* background-color: red; */
+}
+
+.demo-zone {
+    display: block;
+    width: 100%;
+    min-height: 200px;
+}
+
+.mini-demo-zone {
+    display: block;
+    width: 100%;
+    min-height: 100px;
+}
+
+.btns-active, .btns-inactive {
+    margin-top: 20px;
+}
+
+ul {
+    background-color: white;
+}
+
+#page {
+    background-color: transparent;
+}
+
+#brandsOne {
+    width: 100%; /* Example: Make the input element take up the full width */
+    padding: 10px; /* Example: Add padding to the input element */
+    border: 1px solid #ccc; /* Example: Add border to the input element */
+    background-color: red;
+    border-radius: 5px; /* Example: Add border-radius to the input element */
+    box-sizing: border-box; /* Example: Include padding and border in the element's total width and height */
+}
+
+.select-menu{
+    width: 380px;
+    margin: 140px auto;
+}
+.select-menu .select-btn{
+    display: flex;
+    height: 55px;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+}
+.select-menu .options{
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none;
+}
+.select-menu.active .options{
+    display: block;
+}
+.options .option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+.options .option:hover{
+    background: #F2F2F2;
+}
+.option i{
+    font-size: 25px;
+    margin-right: 12px;
+}
+.option .option-text{
+    font-size: 18px;
+    color: #333;
+}
+a {
+    background-color: transparent;
+}
+
+.selectCon {
+    background-color: transparent;
+    width: 50%;
+    height: 40px;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 50%;
+    height: 40px;
+    padding: 0px 10px;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    border: none;
+    border-bottom: 2px solid rgba(151, 151, 151, 0.377);
+    cursor: pointer;
+    color: #797775;
+}  
+  
+.selectCategory::before, .selectCategory::after {
+    --size: 0.3rem;
+    content: "";
+    position: absolute;
+    right: 1rem;
+    pointer-events: none;
+  }
+  
+  .selectCategory::before {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid black;
+    top: 40%;
+  }
+  
+  .selectCategory::after {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid black;
+    top: 55%;
+  }
+  
+.subject {
+    resize: none;
+    background-color: white;
+    border-radius: 5px; 
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(151, 151, 151, 0.377);
+    width: 100%;
+    height: 40px;
+    margin: 20px 0px;
+    padding: 10px 10px 5px 10px;
+}
+
+input[type="file"] {
+    outline: none;
+    padding: 4px;
+  }
+  
+  input[type="file"]:focus-within::file-selector-button,
+  input[type="file"]:focus::file-selector-button {
+    outline: 2px solid #0964b0;
+    outline-offset: 2px;
+  }
+  
+  input[type="file"]::before {
+    top: 16px;
+  }
+  
+  input[type="file"]::after {
+    top: 14px;
+  }
+  
+  /* ------- From Step 2 ------- */
+  
+  input[type="file"] {
+    position: relative;
+  }
+  
+  input[type="file"]::file-selector-button {
+    width: 136px;
+    color: transparent;
+  }
+  
+  input[type="file"]::before {
+    position: absolute;
+    pointer-events: none;
+    top: 11px;
+    left: 40px;
+    color: #0964b0;
+    content: "Upload File";
+  }
+  
+  input[type="file"]::after {
+    position: absolute;
+    pointer-events: none;
+    top: 9px;
+    left: 16px;
+    height: 20px;
+    width: 20px;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230964B0'%3E%3Cpath d='M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z'/%3E%3C/svg%3E");
+  }
+  
+  /* ------- From Step 1 ------- */
+  
+  input[type="file"]::file-selector-button {
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 30px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: 16px;
+    transition: background-color 200ms;
+  }
+  
+  input[type="file"]::file-selector-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  input[type="file"]::file-selector-button:active {
+    background-color: #e5e7eb;
+  }
+
+#utiCon {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#novelty {
+    font-size: 20px;
+    padding-left: 20px;
+    font-weight: 400;
+}
+
+.inputFile {
+    width: 375px;
+    background-color: white;
+    border-radius: 5px;
+    border-bottom: 2px solid rgba(151, 151, 151, 0.377);
+}
+
+.selectCategory {
+    outline: none;
+}
+
+.submit {
+    border: none;
+    background-color: #7011ce;
+    color: white;
+    padding: 5px 15px;
+    height: 40px;
+    border-radius: 5px;
+}
+

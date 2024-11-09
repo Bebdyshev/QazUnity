@@ -1,0 +1,256 @@
+#community, #connect, #fa-caret-down {
+    color: #7011ce;
+}
+
+.fa-fire {
+    background-color: transparent;
+}
+
+/* Home page */
+
+#main_home {
+    width: 80%;
+    height: 100%;
+    margin: 50px auto;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.content {
+    color: #2e333b;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.h1 {
+    font-size: 30px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+    padding: 10px; 
+}
+
+#hor_line {
+    position: absolute;
+    width: 110px;
+    height: 2px;
+    margin-top: 4px;
+    margin-left: 198px;
+    border-bottom: 4px solid #7e12e9;
+    z-index: -1;
+}
+
+/* db greet */
+
+.user {
+    position: relative;
+    background-color: white;
+    border: 2px solid #ccc;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    width: 30%;
+    height: 525px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.075);
+}
+
+.user:hover {
+    transform: scale(1.05);
+}
+
+.user:hover .favorite-btn {
+    background-color: rgba(83, 83, 83, 0.589);
+}
+
+.user_img {
+    border-radius: 3px;
+    width: 100%;
+    height: 55%;
+}
+
+.db_ac {
+    margin-top: 15px;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.db_p {
+    margin-top: 5px;
+    color: #414449;
+    background-color: transparent;
+}
+
+.db_p.long {
+    font-size: 2px; /* Больше символов, больший размер */
+}
+
+.db_h4 {
+    margin-top: 5px;
+    color: black;
+    background-color: transparent;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.db_pol {
+    background-color: transparent;
+}
+
+.db_but {
+    background-color: transparent;
+    border: 2px solid #7011ce;
+    color: #7011ce;
+    position: absolute;
+    align-items: center;
+    justify-self: center;
+    height: 40px;
+    left: 10px;
+    bottom: 10px;
+    width: 94%;
+    transition: 0.3s ease;
+    border-radius: 7px;
+}
+
+.db_but:hover {
+    background-color: #7011ce;
+    color: white;
+}
+
+.db_help {
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.158);
+    margin: 1px 2px;
+    padding: 2px 4px;
+    border-radius: 8px;
+}
+
+.db_poll {
+    background-color: transparent;
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid #41444957;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+}
+
+input[type=text]:focus {
+    border: 2px solid #41444957;
+}
+
+#search-bar {
+    padding: 10px 10px;
+    font-size: 18px;
+    width: 80%;
+    border-radius: 20px 0px 0px 20px;
+    background-color: white;
+    outline: none;
+    border: none;
+}
+
+#filter-by {
+    padding: 10px 10px;
+    font-size: 18px;
+    width: 20%;
+    border: none;
+    border-left: 2px solid #41444957;
+    border-radius: 0px 20px 20px 0px;
+    background-color: white;
+    outline: none;
+}
+
+option {
+    background-color: white;
+    color: black;
+}
+
+option:hover {
+    background-color: #7011ce;
+}
+
+.user_int {
+    position: absolute;
+    background-color: transparent;
+    top: 3.5%;
+    left: 5%;
+    font-size: 12px;
+    background-color: rgba(255, 166, 0, 0.712);
+    padding: 3px 6px;
+    color: white;
+    border-radius: 15px;
+}
+
+#username {
+    transition: 0.2s ease-in-out;
+}
+
+#username:hover {
+    color:#7011ce;
+}
+
+#favorite-inact, #favorite-act {
+    background-color: rgba(0, 0, 0, 0.281);
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    position: absolute;
+    padding: 12px 15px;
+    top: 2.5%;
+    right: 5%;
+}
+
+#favorite-inact:hover {
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+#myForm {
+    position: absolute;
+    right: 21%;
+    top: 3%;
+}
+
+#favorite-act {
+    background-color: #7011ce;
+}
+
+.fa-bookmark {
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+.favorite-btn {
+    background-color: transparent;
+    border: none;
+}
+
+#myForm .fa-regular {
+    background-color: rgba(128, 128, 128, 0.349);
+    padding: 15px 18px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+#myForm .fa-solid {
+    background-color:#7011cebd;
+    padding: 15px 18px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    border: none;
+    transition: 0.2s ease-in-out;   
+}

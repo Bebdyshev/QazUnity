@@ -1,0 +1,493 @@
+#hor_line {
+    display: none;
+}
+
+h3 {
+    background-color: transparent;
+    font-weight: 500;
+    margin: 0px 10px;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    background-color: transparent;
+}
+
+.fa-pen-to-square {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    padding: 6px 9px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 25px;
+    background-color: #7d13e752;
+    margin-top: 0px;
+    color: #7011ce;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+span {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 475px;
+    border-radius: 15px;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.scale {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#profileImage {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border-radius: 15px 0px 0px 15px;
+    transition: 1s ease;
+}
+
+#profileImage:hover {
+    transform: scale(1.1);
+}
+
+#profileInfo {
+    width: 65%;
+    height: 200px;
+    margin: 50px;
+    background-color: white;
+}
+
+/* Popup forms */
+
+.popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+    z-index: 1000;
+}
+
+.popup .popForm{
+    margin:150px auto 100px auto;
+    width:40%;
+    height: 300px;
+    padding:10px;
+    background-color: white;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.popForm::content{
+    background-color: transparent;
+}
+
+textarea {
+    resize: none;
+    width: 95%;
+    height: 125px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 10px 10px;
+    margin: 10px
+}
+
+form {
+    background-color: transparent;
+}
+
+.btn-pan {
+    background-color: transparent;
+    display: flex;
+    position: absolute;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 90px;
+}
+
+input[type="text"] {
+    padding: 0px 10px;
+    width: 95%;
+    margin: 10px 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+label {
+    margin: 10px;
+    background-color: transparent;
+}
+
+.btn-pan {
+    bottom: 0px;
+}
+
+.btn {
+    border-radius: 15px;
+    height: 40px;
+    width: 200px;
+}
+
+.right {
+    background-color: #7011ce;
+    text-align: center;
+    color: white;
+    border: none;
+}
+
+.left {
+    color: black;
+    border: 2px solid gray;
+    background-color: white;
+    text-align: center;
+}
+
+.right:hover {
+    background-color: #6512b8;
+}
+
+.left:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+#page {
+    display: block;
+    background-color: transparent;
+    border-radius: 15px;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.profileTitle {
+    margin: 50px 30px;
+}
+
+/* Career progress */
+
+.fa-plus {
+    color: #0996ec;
+    background-color: transparent;
+    margin-right: 5px;
+}
+
+.profile_btn:hover .fa-plus {
+    color: #ebf3fc;
+}
+
+#line-pro {
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    margin-top: calc(10% - 50px);
+    margin-left: 30px;
+    height: 45%; /* Например, 70% от высоты родительского элемента */
+    border-left: 2px dotted gray;
+    z-index: 0;
+}
+
+
+
+#careerProgress {
+    background-color: transparent;
+}
+
+.fa-briefcase, .fa-graduation-cap {
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: #e46727;
+    border-radius: 50%;
+    margin-right: 5px; 
+}
+
+.help {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    padding-top: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* */
+
+#profileProgress {
+    position: relative;
+    margin: auto;
+    width: 99%;
+    height: fit-content;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+}
+
+.career-block {
+    position: relative;
+    width: fit-content;
+    font-size: 12px;
+    height: auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #fff7e6;
+    color: #e56020;
+    z-index: 2;
+}
+
+.profile-btn-container {
+    z-index: 997;
+    display: flex;
+    margin-left: 25%;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    margin-top: 20px; 
+    background-color: transparent;
+}
+
+.profile_btn {
+    border: none;
+    border-radius: 50px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    width: fit-content;
+    padding: 7px;
+    background-color: #f5fbfe;
+    color: #0996ec;
+    transition: 0.2s ease-in-out;
+}
+
+.profile_btn:hover {
+    color: #ffffff;
+    background-color: #096dd9;
+}
+
+/* POPUP BUTTON */
+
+.popupc{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+    z-index: 1000;
+}
+
+.popupc .popForm{
+    margin:150px auto 100px auto;
+    width:40%;
+    height: 300px;
+    padding:10px;
+    background-color: white;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+    z-index: 1001;
+}
+
+button {
+    display: block;
+    text-align: center; /* add this line */
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio-con {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    background-color: transparent;
+    float: left;
+    margin: 60px 10px;
+}
+
+.row {
+    font-size: 25px;
+    background-color: #f4f5f7;
+    border-radius: 5px;
+    padding: 10px;
+    width: 55px;
+    transition: 0.2s ease-in;
+}
+
+.highlight {
+    background-color: #096dd9;
+    color: white;
+}
+
+.radio {
+    background-color: transparent;
+    text-align: center;
+}
+
+/* CAREER ANSWERS*/
+
+#uni_container, #work_container {
+    z-index: 997;
+    display: flex;
+    margin-left: 25%;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    margin-top: 20px; 
+}
+
+.career-step {
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+h4 {
+    background-color: transparent;
+    font-size: 17px;
+    color: #364461;
+    padding-bottom: 10px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.career-p {
+    background-color: transparent;
+    color: #646872;
+    font-size: 15px;
+    margin-left: 10px;
+    overflow-wrap: break-word;
+}
+
+.lol {
+    background-color: transparent;
+    color: #e56020;
+    margin-left: 10px;
+}
+
+.h-mini-p {
+    font-size: 15px;
+    color:#f36219c5;
+}
+
+.help-item {
+    width: fit-content;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 15px;
+    white-space: normal;
+}
+
+.profileSection {
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+#favoriteScroll {
+    position: relative;
+    padding: 0px 30px;
+    margin-top: 100px;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+.favoriteUsersCon {
+    position: relative;
+    margin-top: -8%;
+    width: 100%;
+    padding: 20px 0px;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.fas {
+    background-color: transparent;
+    color: white;
+}
+
+.left-pro, .right-pro {
+    background-color:#7011ce;
+    padding: 10px 13px;
+    border: none;
+    border-radius: 50%;
+}
+
+.left-pro {
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right-pro {
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#hen {
+    background-color: white;
+    height: fit-content;
+    font-weight: 600;
+    font-size: 25px;
+    border-radius: 15px;
+}
+
+.profileTitle {
+    margin: 30px;
+    padding: 30px;
+    background-color: transparent;
+}
+
+.fa-bookmark {
+    padding: 12px 14px;
+    background-color: #7011cecb;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+}

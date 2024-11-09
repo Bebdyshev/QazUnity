@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Добавим box-sizing для правильного учета размеров */
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0; /* Уберем внешние отступы у body */
+    font-size: 16px; /* Установим базовый размер шрифта */
+}
+
+/* Для центрирования блока progress внутри progressBar */
+
+#progressBar {
+    width: 100%;
+    max-height: 7px;
+    background-color: #e4e6eb;
+    overflow: hidden; 
+    border-radius: 5px;
+    transition: 1000ms ease-in-out;
+}
+.progress {
+    width: 0%;
+    height: 7px;
+    background-color: #00875a;
+    border-radius: 5px;
+    transition: 1000ms ease-in-out;
+}
+
+/* form */
+
+.fake_form {
+    width: 80%; /* Уменьшим ширину формы */
+    margin: 50px auto;
+}
+
+form {
+    padding-top: 2.5%;
+}
+
+h1 {
+    color: #2e333b;
+}
+span {
+    color: #5d626c;
+    position: absolute;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.greet {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.item {
+    margin-top: 10px;
+}
+
+/* Имя Фамилия */
+
+#first, #last {
+    display: inline-block;
+    width: 40%; /* Чтобы уместить оба элемента на одной линии с пространством между ними */
+    vertical-align: top; /* Выравниваем по верху, чтобы избежать лишних отступов */
+    margin-bottom: 20px; /* Отступ снизу для элементов */
+    box-sizing: border-box; /* Учтем padding и border в ширине элемента */
+}
+
+#first {
+    margin-right: 14.5%; /* Отступ справа для создания пространства между элементами */
+}
+
+#last {
+    margin-left: 5%; /* Отступ слева для создания пространства между элементами */
+}
+
+
+.item {
+    max-height: 175px;
+    display: none;
+}
+label {
+    color: #64789b;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    font-size: 25px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+
+#sign {
+    position: relative;
+    display: inline-block;
+    width: calc(30% - 20px);
+    padding: 20px 0;
+    border-radius: 15px;
+    background-color: #3486df;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    transition: 100ms ease-in;
+    margin-top: 5%;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#back {
+    position: relative;
+    display: inline-block;
+    width: calc(30% - 20px);
+    padding: 20px 0;
+    border-radius: 15px;
+    background-color: white;
+    color: #494341;
+    border: 4px solid #d4d4d4;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    transition: 200ms ease-in;
+    z-index: 1;
+}
+
+#back {
+    background-color: white;
+    border: 2px solid #e4e6eb;
+    color: #494341;
+    transition: 200ms ease-in;
+    margin-left: 20px; /* Отступ для создания пространства между кнопками */
+    right: 2%;
+}
+
+#sign {
+    border-radius: 15px;
+    background-color: #3486df;
+    color: white;
+    border: none;
+    left: 42%;
+}
+
+#sign:hover {
+    background-color: #0e6ccf;
+}
+#back:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.input,
+label {
+    position: relative; /* Установим относительное позиционирование */
+    z-index: 2; /* Значение z-index для остальных элементов */
+}
+
+.input {
+    width: 100%;
+    padding: 20px; /* Уменьшим отступы вокруг текста в полях */
+    font-size: 1em;
+    color: #2e333b;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 2px solid #e4e6eb;
+    margin-bottom: 20px;
+}
+
+.input:hover {
+    width: 100%;
+    padding: 20px;
+    font-size: 1em;
+    color: #2e333b;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 2px solid #096dd9;
+    transition: 100ms ease-in;
+    margin-bottom: 20px;
+
+}
+
+
+
+form button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px 50px;
+    color: #fff;
+    font-size: 1.5em;
+    background: #00BBFF;
+}
+
+.active {
+    display: block;
+}
+
+/*2 этап регистрации*/
+
+.radio {
+    border: 2px solid #d4d4d4;
+    border-radius: 15px;
+    margin-top: 10px; /* Добавим расстояние снизу между элементами radio */
+}
+
+.label2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.role_h2 {
+    margin-top: -20px;
+}
+
+.radio_dot {
+    margin-top: 15px;
+    width: 40px;
+    height: 40px;
+    order: 2; /* Порядок элемента внутри flex-контейнера */
+}
+
+.radio:hover {
+    border-color: #096dd9; /* Изменение цвета контура при наведении */
+}
+
+.span {
+    color: #5d626c;
+    width: 90%;
+    margin-top: 7%;
+    font-size: 20px;
+    order: 1; 
+}
+/* back/next кнопки */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    transition: bottom 0.3s ease-in-out; /* Плавное появление/скрытие */
+}
+
+.actions {
+    padding: 0 10px;
+    z-index: 1;
+    position: fixed;
+    bottom: 10px; /* Расположение снизу с отступом */
+    left: 0;
+    right: 0;
+}
+
+#nextAct {
+    width: 9%;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    transition: 100ms ease-in;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 1;
+    background-color: #3486df;
+    color: white;
+}
+
+#prevAct {
+    width: 9%;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #e4e6eb;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    transition: 100ms ease-in;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 1;
+    background-color: white;
+    color: #494341;
+}
+
+#nextAct:hover {
+    background-color: #0e6ccf;
+}
+#prevAct:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+/* 3 Этап регистрации */
+
+#stageIII label {
+    display:block;
+    border:solid 2px #dadee9;
+    width: auto;
+    display: inline-block;
+    margin-top:10px;
+    padding: 1px 15px 1px 15px;
+    color: #2e333b;
+    text-align:center;
+    line-height: 40px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+ 
+#stageIII input[type=checkbox] {
+    display: none;
+}
+ 
+#stageIII input:checked + label {
+    border: solid 2px #0b6ed9;
+    background-color: #e6f0fb;
+}
+
+#creators {
+    margin-top: 7%;
+    z-index: 3;
+}
+
+#doers, #helpers {
+    margin-top: 2%;
+    z-index: 2;
+}
+
+#stageIII .span {
+    margin-top: 2%;
+    z-index: 1;
+}
+
+/* 4 Этап регистрации */
+
+#stageVI .span {
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+  
+  #stageVI .radio {
+    border: 2px solid #d4d4d4;
+    border-radius: 15px;
+    height: 15vh;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    cursor: pointer; /* Add cursor for interactivity */
+  }
+  
+  #stageVI #unemploy {
+    margin-top: 100px;
+  }
+  
+  #stageVI .radio:hover {
+    border: 2px solid #0b6ed9;
+    background-color: #e5f5ff; /* Add background color on hover */
+  }
+  
+  #stageVI .radio_dot {
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    order: 2;
+    background-color: #fff; /* Initial background color */
+  }
+  
+  #stageVI .radio_dot:checked {
+    background-color: #0b6ed9; /* Change background color when checked */
+  }
+  
+  #stageVI input[type="radio"]:checked + label {
+    border-color: #0b6ed9;
+    background-color: #0b6fd93d; /* Keep this for extra visual feedback */
+  }
+  
+  #file_con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    border: 2px dashed #d4d4d4;
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+#file {
+    border: none;
+    color: #0b6ed9;
+}
+
+  .fil {
+    margin-top: 0px;
+    margin-left: -135px;
+}
+
+.radio2 {
+    border: 2px solid #d4d4d4;
+    border-radius: 15px;
+    margin-top: 10px;
+    height: 100px;
+}
+
+.label3 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 10px;
+    height: 100%;
+}
+
+.label3 h2 {
+    margin: 25px;
+}
+
+.radio_dot_2 {
+    margin-top: 17px;
+    width: 40px;
+    height: 40px;
+    order: 2;
+}
